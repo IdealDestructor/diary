@@ -45,5 +45,5 @@ pagination_dir: page
 theme: icarus
 deploy:
   type: git
-  repo: 'https://github.com/idealdestructor/daily.git'
+  repo: 'git@github.com:IdealDestructor/daily.git'
   branch: gh-page
