@@ -27,11 +27,11 @@ jobs:
     - name: 5. hexo deploy ...
       run: |
         mkdir -p ~/.ssh/
-        echo "${{ secrets.PERSONAL_TOKEN }}" > ~/.ssh/id_rsa
+        echo "${{ secrets.ACTIONKEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         
-        git config --global user.name "idealdestructor"
+        git config --global user.name "IdealDestructor"
         git config --global user.email "wdqjj@qq.com"
         git config --global core.quotepath false
         
