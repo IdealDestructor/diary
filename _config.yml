@@ -5,7 +5,7 @@ keywords: null
 author: Francis
 language: en
 timezone: null
-url: 'http://today.deqiang.wang'
+url: 'https://today.deqiang.wang'
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
