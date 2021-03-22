@@ -1,11 +1,11 @@
-title: 德强の手帐
+title: Francis' Diary
 subtitle: null
 description: null
 keywords: null
 author: Francis
 language: en
 timezone: null
-url: 'http://diary.deqiang.wang'
+url: 'http://today.deqiang.wang'
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
