@@ -5,7 +5,7 @@ keywords: null
 author: Francis
 language: en
 timezone: null
-url: 'http://blog.deqiang.wang'
+url: 'http://diary.deqiang.wang'
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
@@ -45,5 +45,5 @@ pagination_dir: page
 theme: icarus
 deploy:
   type: git
-  repo: 'git@github.com:IdealDestructor/daily.git'
+  repo: 'git@github.com:IdealDestructor/diary.git'
   branch: gh-page
