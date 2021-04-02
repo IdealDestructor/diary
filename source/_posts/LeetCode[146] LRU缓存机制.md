@@ -52,6 +52,10 @@ lRUCache.get(4);    // 返回 4
 - `0 <= value <= 104`
 - 最多调用 `3 * 104` 次 `get` 和 `put`
 
+
+
+<!--more-->
+
 ### Solution:
 
 ```c++
