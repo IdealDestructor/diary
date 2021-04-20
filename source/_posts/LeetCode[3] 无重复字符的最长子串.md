@@ -12,7 +12,9 @@ categories: 编程算法
   "双指针": https://leetcode.com/tag/two-pointers/
   "字符串": https://leetcode.com/tag/string/
   "Sliding Window": https://leetcode.com/tag/sliding-window/
-Similar Questions:
+
+### Similar Questions:
+
   "至多包含两个不同字符的最长子串": https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
   "至多包含 K 个不同字符的最长子串": https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
   "K 个不同整数的子数组": https://leetcode.com/problems/subarrays-with-k-different-integers/

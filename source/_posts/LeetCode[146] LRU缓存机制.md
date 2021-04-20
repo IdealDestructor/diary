@@ -5,11 +5,17 @@ tags: [C++,LeetCode]
 categories: 编程算法
 ---
 
+### Related Topics:
 
+"设计": https://leetcode.com/tag/design/ 
 
-## Related Topics:
+### Similar Questions:
 
-"设计": https://leetcode.com/tag/design/ Similar Questions: "LFU 缓存": https://leetcode.com/problems/lfu-cache/ "设计内存文件系统": https://leetcode.com/problems/design-in-memory-file-system/ "迭代压缩字符串": https://leetcode.com/problems/design-compressed-string-iterator/
+ "LFU 缓存": https://leetcode.com/problems/lfu-cache/
+
+ "设计内存文件系统": https://leetcode.com/problems/design-in-memory-file-system/ 
+
+"迭代压缩字符串": https://leetcode.com/problems/design-compressed-string-iterator/
 
 ### Problem:
 
@@ -59,7 +65,7 @@ lRUCache.get(4);    // 返回 4
 ### Solution:
 
 ```c++
-LRU缓存机制struct DLinkedNode {
+struct DLinkedNode {
     int key, value;
     DLinkedNode* prev;
     DLinkedNode* next;
