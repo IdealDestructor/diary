@@ -28,6 +28,8 @@ categories: 编程算法
 1. `1 <= nums.length <= 50000`
 2. `50000 <= nums[i] <= 50000`
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/sort-an-array/solution/pai-xu-shu-zu-by-leetcode-solution/

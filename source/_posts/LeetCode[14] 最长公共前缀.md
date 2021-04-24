@@ -36,6 +36,8 @@ categories: 编程算法
 - `0 <= strs[i].length <= 200`
 - `strs[i]` 仅由小写英文字母组成
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/longest-common-prefix/solution/zui-chang-gong-gong-qian-zhui-cshi-xian-shui-ping-/

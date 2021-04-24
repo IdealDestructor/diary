@@ -41,6 +41,8 @@ categories: 编程算法
 - `0 <= nums.length <= 3000`
 - `105 <= nums[i] <= 105`
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/3sum/solution/san-shu-zhi-he-by-leetcode-solution/

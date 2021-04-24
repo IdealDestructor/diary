@@ -45,6 +45,8 @@ categories: 编程算法
 - `0 <= Node.val <= 9`
 - 题目数据保证列表表示的数字不含前导零
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/add-two-numbers/solution/zhi-zhen-lian-biao-jian-dan-yi-li-jie-on-by-guai-m/

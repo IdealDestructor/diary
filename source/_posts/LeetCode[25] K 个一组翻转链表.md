@@ -58,6 +58,8 @@ Similar Questions:
 - `0 <= Node.val <= 1000`
 - `1 <= k <= sz`
 
+<!--more-->
+
 ### Solution:
 
 ```c++

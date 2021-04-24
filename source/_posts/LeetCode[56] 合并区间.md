@@ -48,6 +48,8 @@ Similar Questions:
 - `intervals[i].length == 2`
 - `0 <= starti <= endi <= 104`
 
+<!--more-->
+
 ### Solution:
 
 算法

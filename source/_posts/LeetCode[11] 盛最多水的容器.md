@@ -50,6 +50,8 @@ categories: 编程算法
 - `2 <= n <= 3 * 104`
 - `0 <= height[i] <= 3 * 104`
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/container-with-most-water/solution/sheng-zui-duo-shui-de-rong-qi-by-leetcode-solution/

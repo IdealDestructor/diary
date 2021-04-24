@@ -47,6 +47,8 @@ categories: 编程算法
 - `1 <= s.length <= 1000`
 - `s` 仅由数字和英文字母（大写和/或小写）组成
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/

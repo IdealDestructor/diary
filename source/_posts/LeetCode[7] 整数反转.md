@@ -51,6 +51,8 @@ categories: 编程算法
 
 - `231 <= x <= 231 - 1`
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/reverse-integer/solution/zheng-shu-fan-zhuan-by-leetcode/

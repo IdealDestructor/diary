@@ -61,6 +61,8 @@ P     I
 - `s` 由英文字母（小写和大写）、`','` 和 `'.'` 组成
 - `1 <= numRows <= 1000`
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/zigzag-conversion/solution/z-zi-xing-bian-huan-by-leetcode/

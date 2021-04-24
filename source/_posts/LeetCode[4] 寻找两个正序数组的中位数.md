@@ -60,6 +60,8 @@ categories: 编程算法
 - `106 <= nums1[i], nums2[i] <= 106`
 - *进阶：**你能设计一个时间复杂度为 `O(log (m+n))` 的算法解决此问题吗？
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/di-k-xiao-shu-jie-fa-ni-zhen-de-dong-ma-by-geek-8m/

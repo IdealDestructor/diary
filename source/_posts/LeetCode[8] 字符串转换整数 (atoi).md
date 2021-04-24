@@ -112,6 +112,8 @@ categories: 编程算法
 - `0 <= s.length <= 200`
 - `s` 由英文字母（大写和小写）、数字（`0-9`）、`' '`、`'+'`、`'-'` 和 `'.'` 组成
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/string-to-integer-atoi/solution/zi-fu-chuan-zhuan-huan-zheng-shu-atoi-by-leetcode-/

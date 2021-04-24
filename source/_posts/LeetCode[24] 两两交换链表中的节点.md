@@ -42,6 +42,8 @@ categories: 编程算法
 - `0 <= Node.val <= 100`
 - *进阶：**你能在不修改链表节点值的情况下解决这个问题吗?（也就是说，仅修改节点本身。）
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/swap-nodes-in-pairs/solution/liang-liang-jiao-huan-lian-biao-zhong-de-jie-di-91/

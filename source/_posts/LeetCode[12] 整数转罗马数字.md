@@ -75,6 +75,8 @@ M             1000
 
 - `1 <= num <= 3999`
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/integer-to-roman/solution/tan-xin-suan-fa-by-liweiwei1419/

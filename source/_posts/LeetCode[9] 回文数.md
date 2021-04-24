@@ -50,6 +50,8 @@ categories: 编程算法
 - `231 <= x <= 231 - 1`
 - *进阶：**你能不将整数转为字符串来解决这个问题吗？
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/palindrome-number/solution/hui-wen-shu-by-leetcode-solution/

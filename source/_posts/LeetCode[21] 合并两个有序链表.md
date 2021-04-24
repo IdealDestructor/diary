@@ -40,6 +40,8 @@ categories: 编程算法
 - `100 <= Node.val <= 100`
 - `l1` 和 `l2` 均按 **非递减顺序** 排列
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/dong-hua-yan-shi-21-he-bing-liang-ge-you-blxu/

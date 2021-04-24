@@ -65,6 +65,8 @@ categories: 编程算法
 - `p` 可能为空，且只包含从 `a-z` 的小写字母，以及字符 `.` 和 ``。
 - 保证每次出现字符 `` 时，前面都匹配到有效的字符
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/regular-expression-matching/solution/zheng-ze-biao-da-shi-pi-pei-by-leetcode-solution/

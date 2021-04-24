@@ -30,6 +30,10 @@ categories: 编程算法
 
 `2 <= n <= 100000`
 
+
+
+<!--more-->
+
 ### Solution:
 
 

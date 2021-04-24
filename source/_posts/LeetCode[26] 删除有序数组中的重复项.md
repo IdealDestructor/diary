@@ -58,6 +58,8 @@ for (int i = 0; i < len; i++) {
 - `104 <= nums[i] <= 104`
 - `nums` 已按升序排列
 
+<!--more-->
+
 ### Solution:
 
 https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/solution/shan-chu-pai-xu-shu-zu-zhong-de-zhong-fu-tudo/
