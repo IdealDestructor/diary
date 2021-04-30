@@ -288,7 +288,7 @@ widgets:
         # Names and URLs of the sites
         links:
             主站: 'http://idealdestructor.com'
-            备案号: '津ICP备16009041号-4'
+            公众号: '析构理想'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
