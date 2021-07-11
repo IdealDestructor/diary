@@ -117,7 +117,7 @@ navbar:
 footer:
     # Links to be shown on the right of the footer section
     links:
-        Leetcode:
+        LeetCode:
             icon: fas fa-terminal
             url: 'https://leetcode-cn.com/u/idealdestructor/'
         Kaggle::
