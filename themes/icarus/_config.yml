@@ -129,6 +129,9 @@ footer:
         GitHub:
             icon: fab fa-github
             url: 'https://github.com/idealdestructor'
+        Email:
+            icon: fa fa-envelope
+            url: 'mailto:hi@mail.deqiang.wang'
 # Article related configurations
 article:
     # Code highlight settings
