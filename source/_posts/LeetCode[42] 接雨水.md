@@ -50,7 +50,7 @@ Similar Questions:
 
 #### 方法一：动态规划
 
-![image-20211005195833280](https://i.loli.net/2021/10/05/Mvd793PLB5HqjWG.png)
+![截屏2021-10-05 下午8.55.59](https://i.loli.net/2021/10/05/CFpktJOfsmW7TRB.png)
 
 ```c++
 class Solution {
