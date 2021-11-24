@@ -49,9 +49,7 @@ Similar Questions:
 
 ### Solution:
 
-
-
-*Template generated via [Leetmark](https://github.com/crimx/crx-leetmark).*
+https://leetcode-cn.com/problems/kth-largest-element-in-an-array/solution/shu-zu-zhong-de-di-kge-zui-da-yuan-su-by-leetcode-/
 
 方法一：基于快速排序的选择方法
 
