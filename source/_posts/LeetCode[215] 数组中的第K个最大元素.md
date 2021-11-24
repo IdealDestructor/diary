@@ -6,6 +6,53 @@ categories: 编程算法
 widgets: null
 ---
 
+---
+Related Topics:
+  "数组": https://leetcode.com/tag/array/
+  "分治": https://leetcode.com/tag/divide-and-conquer/
+  "快速选择": https://leetcode.com/tag/quickselect/
+  "排序": https://leetcode.com/tag/sorting/
+  "堆（优先队列）": https://leetcode.com/tag/heap-priority-queue/
+Similar Questions:
+  "摆动排序 II": https://leetcode.com/problems/wiggle-sort-ii/
+  "前 K 个高频元素": https://leetcode.com/problems/top-k-frequent-elements/
+  "第三大的数": https://leetcode.com/problems/third-maximum-number/
+  "数据流中的第 K 大元素": https://leetcode.com/problems/kth-largest-element-in-a-stream/
+  "最接近原点的 K 个点": https://leetcode.com/problems/k-closest-points-to-origin/
+
+### Problem:
+
+给定整数数组 `nums` 和整数 `k`，请返回数组中第 `**k**` 个最大的元素。
+
+请注意，你需要找的是数组排序后的第 `k` 个最大的元素，而不是第 `k` 个不同的元素。
+
+**示例 1:**
+
+```
+输入: [3,2,1,5,6,4] 和 k = 2
+输出: 5
+```
+
+**示例 2:**
+
+```
+输入: [3,2,3,1,2,4,5,5,6] 和 k = 4
+输出: 4
+```
+
+**提示：**
+
+- `1 <= k <= nums.length <= 104`
+- `-104 <= nums[i] <= 104`
+
+<!--more-->
+
+### Solution:
+
+
+
+*Template generated via [Leetmark](https://github.com/crimx/crx-leetmark).*
+
 方法一：基于快速排序的选择方法
 
 我们可以改进快速排序算法来解决这个问题：在分解的过程当中，我们会对子数组进行划分，如果划分得到的q 正好就是我们需要的下标，就直接返回a[q]；否则，如果 q 比目标下标小，就递归右子区间，否则递归左子区间。这样就可以把原来递归两个区间变成只递归一个区间，提高了时间效率。这就是「快速选择」算法。
@@ -20,7 +67,7 @@ widgets: null
 
 我们也可以使用堆排序来解决这个问题——建立一个大根堆，做 k−1 次删除操作后堆顶元素就是我们要找的答案。在很多语言中，都有优先队列或者堆的的容器可以直接使用，但是在面试中，面试官更倾向于让更面试者自己实现一个堆。所以建议读者掌握这里大根堆的实现方法，在这道题中尤其要搞懂「建堆」、「调整」和「删除」的过程。
 
-<!--more-->
+
 
 ```c++
 /*
