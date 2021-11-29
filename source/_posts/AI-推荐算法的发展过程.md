@@ -2,7 +2,7 @@
 title: 推荐算法的发展过程
 date: 2021-11-17 14:22:35
 tags: [推荐系统,机器学习,深度学习]
-categories: 学习笔记
+categories: 人工智能
 widgets: null
 ---
 

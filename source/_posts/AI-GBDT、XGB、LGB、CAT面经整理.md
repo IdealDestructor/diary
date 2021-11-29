@@ -2,7 +2,7 @@
 title: GBDT、XGB、LGB、CAT面经整理
 date: 2021-11-18 14:22:35
 tags: [机器学习]
-categories: 学习笔记
+categories: 人工智能
 widgets: null
 ---
 
