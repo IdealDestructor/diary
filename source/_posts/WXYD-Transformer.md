@@ -140,7 +140,7 @@ n 和 m 可以一样长、可以不一样长。
 
 i.e., 中英互译：Hello World 你好世界
 
-![](https://i0.hdslb.com/bfs/note/aca798ce49bb039ffef49dd49c47ae12573222a2.png)
+![](https://i.loli.net/2021/12/02/iN5goJwLSQB3TfU.png)
 
 encoder 和 decoder 的区别：decoder 的输出词是一个一个生成的，auto-regressive 的模型
 
