@@ -1,6 +1,6 @@
 ---
 title: LeetCode[27] 移除元素
-date: 2021-11-30 17:05:45
+date: 2021-12-02 17:05:45
 tags: [C++,LeetCode]
 categories: 编程算法
 widgets: null
@@ -63,9 +63,9 @@ for (int i = 0; i < len; i++) {
 - `0 <= nums[i] <= 50`
 - `0 <= val <= 100`
 
-### Solution:
+<!--more-->
 
-https://leetcode-cn.com/problems/remove-element/solution/yi-chu-yuan-su-by-leetcode-solution-svxi/
+### Solution:
 
 ```c++
 class Solution {
