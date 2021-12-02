@@ -9,6 +9,8 @@ widgets: null
 
 转载自https://www.bilibili.com/read/cv13759416?spm_id_from=333.788.b_636f6d6d656e74.52
 
+<!--more-->
+
 Transformer论文逐段精读【论文精读】
 
 **1. 标题 + 作者**
