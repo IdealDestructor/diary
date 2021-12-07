@@ -1,7 +1,7 @@
 ---
 title: 济南半日游
 date: 2021-05-17 23:08
-categories: 旅行探索
+categories: 探索旅行
 tags: [摄影,自然]
 thumbnail: https://i.loli.net/2021/05/18/LxkgQPJb68F2Eip.jpg
 cover: https://i.loli.net/2021/05/18/LxkgQPJb68F2Eip.jpg

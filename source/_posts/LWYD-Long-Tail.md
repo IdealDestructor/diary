@@ -2,7 +2,7 @@
 title: 论文阅读笔记之Long-Tailed Classification by Keeping the Good and Removing the Bad Momentum Causal Effect NIPS，2020 
 date: 2021-05-13 14:22:35
 tags: [深度学习,CV]
-categories: 文献阅读
+categories: 论文阅读
 widgets: null
 ---
 
