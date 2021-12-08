@@ -12,7 +12,9 @@ widgets: null
 
 # ViT：Transformer Is All You Need
 
-![截屏2021-12-07 下午8.21.24](https://s2.loli.net/2021/12/07/Id1G3TxvJZWNRLD.png)Patch Embedding
+![截屏2021-12-07 下午8.21.24](https://s2.loli.net/2021/12/07/Id1G3TxvJZWNRLD.png) 
+
+## Patch Embedding
 
 将原始的2-D图像转换成一系列1-D的patch embeddings,分成patch有利于降低计算量。
 
@@ -68,6 +70,4 @@ mask方法：采用 masked MSA 机制将 self-attention 的计算限制在每个
 
 比如位置编码 ![[公式]](https://www.zhihu.com/equation?tex=B) 的第 ![[公式]](https://www.zhihu.com/equation?tex=(i%2Cj)) 个元素 ![[公式]](https://www.zhihu.com/equation?tex=B(i%2Cj)) ，它代表的是 **Window 里面第** ![[公式]](https://www.zhihu.com/equation?tex=i) **个 Patch 和第** ![[公式]](https://www.zhihu.com/equation?tex=j) **个 Patch 的相对位置关系，相同位置关系的编码值相同。
 
-
-
-详细参考：https://zhuanlan.zhihu.com/p/404001918
+详情参考：https://zhuanlan.zhihu.com/p/404001918
