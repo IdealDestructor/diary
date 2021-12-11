@@ -1,7 +1,7 @@
 ---
 title: LeetCode[72] 编辑距离
 date: 2021-10-09 12:03:35
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,动态规划]
 categories: 编程算法
 widgets: null
 ---
