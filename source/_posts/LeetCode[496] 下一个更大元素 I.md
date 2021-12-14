@@ -1,7 +1,7 @@
 ---
 title: LeetCode[496] 下一个更大元素 I
 date: 2021-12-10 17:05:45
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,单调栈]
 categories: 编程算法
 widgets: null
 ---
@@ -14,9 +14,7 @@ Related Topics:
 Similar Questions:
   "下一个更大元素 II": https://leetcode.com/problems/next-greater-element-ii/
   "下一个更大元素 III": https://leetcode.com/problems/next-greater-element-iii/
-
   "每日温度": https://leetcode.com/problems/daily-temperatures/
----
 
 ### Problem:
 

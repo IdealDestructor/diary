@@ -47,3 +47,5 @@ deploy:
   type: git
   repo: 'git@github.com:IdealDestructor/diary.git'
   branch: gh-page
+encrypt:
+    enable: true

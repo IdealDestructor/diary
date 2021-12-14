@@ -1,10 +1,9 @@
 ---
 title: 论文阅读笔记之Attention Is All You Need 
 date: 2021-12-02 14:22:35
-tags: [深度学习]
+tags: [深度学习,Transformer]
 categories: 论文阅读
 widgets: null
-
 ---
 
 转载自https://www.bilibili.com/read/cv13759416?spm_id_from=333.788.b_636f6d6d656e74.52
