@@ -290,7 +290,7 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            主站: 'http://idealdestructor.com'
+            ~IDEAL(): 'http://idealdestructor.com'
             公众号: '析构理想'
     # Categories widget configurations
     -
