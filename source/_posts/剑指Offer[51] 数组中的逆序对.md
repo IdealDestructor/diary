@@ -28,13 +28,7 @@ Related Topics:
 
 **限制：**
 
-`0 <= 数组长度 <= 50000`
-
-### Solution:
-
-
-
-*Template generated via [Leetmark](https://github.com/crimx/crx-leetmark).*
+`0 <= 数组长度 <= 50000
 
 <!--more-->
 
