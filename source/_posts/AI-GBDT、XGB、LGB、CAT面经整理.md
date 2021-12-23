@@ -4,6 +4,10 @@ date: 2021-11-18 14:22:35
 tags: [机器学习]
 categories: 人工智能
 widgets: null
+password: 328
+abstract: 这是一篇加密博文，请输入密码后查看
+message: 这里需要密码才能访问。
+wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 ---
 
 注意，下文的原始的 gbdt 是以 sklearn 中的 gbdt 的实现为例子来阐述的，因为 gbdt 的改进版本有很多，为了叙述方便，使用这个最为人所知的实现来描述。

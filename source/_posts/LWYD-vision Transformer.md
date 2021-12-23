@@ -24,7 +24,7 @@ ViT中默认采用学习（训练的）的1-D positional embedding，在输入tr
 
 ## Class Token
 
-增加一个特殊的class token，其最后输出的特征加一个linear classifier就可以实现对图像的分类。class token对应的embedding在训练时随机初始化，然后通过训练得到.
+增加一个特殊的class token，其最后输出的特征加一个linear classifier就可以实现对图像的分类。class token对应的embedding在训练时随机初始化，然后通过训练得到。
 
 ## Hybrid Architecture
 
