@@ -14,6 +14,8 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 
 ![](https://pic4.zhimg.com/v2-e17d016be888ff153204e7c83d41bd57_r.jpg)
 
+<!--more-->
+
 **1. LightGBM 简介**
 ------------------
 
@@ -241,7 +243,7 @@ LightGBM 有两大类接口：LightGBM 原生接口 和 scikit-learn 接口 ，�
 
 **（1）基于 LightGBM 原生接口的分类**
 
-```
+```python
 import lightgbm as lgb
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
@@ -282,7 +284,7 @@ print(accuracy_score(y_test, y_pred))
 
 **（2）基于 Scikit-learn 接口的分类**
 
-```
+```python
 from lightgbm import LGBMClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import GridSearchCV
@@ -333,7 +335,7 @@ print('Best parameters found by grid search are:', gbm.best_params_)
 
 该房价预测的训练数据集中一共有 81 列，第一列是 Id，最后一列是 label，中间 79 列是特征。这 79 列特征中，有 43 列是分类型变量，33 列是整数变量，3 列是浮点型变量。训练数据集中存在缺失值。
 
-```
+```python
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import lightgbm as lgb
@@ -386,7 +388,7 @@ print("Mean Absolute Error : " + str(mean_absolute_error(predictions, test_y)))
 
 **（4）基于 Scikit-learn 接口的回归**
 
-```
+```python
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import lightgbm as lgb
