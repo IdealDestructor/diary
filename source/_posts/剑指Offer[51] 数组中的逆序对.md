@@ -1,7 +1,7 @@
 ---
 title: 剑指Offer[51] 数组中的逆序对
 date: 2021-12-11 14:22:35
-tags: [C++,剑指offer]
+tags: [C++,剑指offer,归并排序]
 categories: 编程算法
 widgets: null
 ---

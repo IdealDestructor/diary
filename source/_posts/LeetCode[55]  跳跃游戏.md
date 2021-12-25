@@ -1,7 +1,7 @@
 ---
 title: LeetCode[55] 跳跃游戏
 date: 2021-12-02 17:05:45
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,动态规划]
 categories: 编程算法
 widgets: null
 ---

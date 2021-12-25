@@ -1,7 +1,7 @@
 ---
 title: LeetCode[5] 最长回文子串
 date: 2021-02-09 22:29:45
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,动态规划]
 categories: 编程算法
 widgets: null
 ---

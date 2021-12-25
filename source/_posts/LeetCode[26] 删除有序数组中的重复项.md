@@ -1,7 +1,7 @@
 ---
 title: LeetCode[26] 删除有序数组中的重复项
 date: 2021-04-19 16:22:35
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,双指针]
 categories: 编程算法
 widgets: null
 ---

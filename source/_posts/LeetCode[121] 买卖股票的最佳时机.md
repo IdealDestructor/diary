@@ -1,7 +1,7 @@
 ---
 title: LeetCode[121] 买卖股票的最佳时机
 date: 2021-04-23 21:03:35
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,动态规划]
 categories: 编程算法
 widgets: null
 ---

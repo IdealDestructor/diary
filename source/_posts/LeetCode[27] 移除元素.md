@@ -1,7 +1,7 @@
 ---
 title: LeetCode[27] 移除元素
 date: 2021-12-02 17:05:45
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,双指针]
 categories: 编程算法
 widgets: null
 ---

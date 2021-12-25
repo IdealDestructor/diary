@@ -1,7 +1,7 @@
 ---
 title: LeetCode[21] 合并两个有序链表
 date: 2021-03-28 11:29:45
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,递归,链表]
 categories: 编程算法
 widgets: null
 ---

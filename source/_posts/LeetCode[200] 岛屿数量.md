@@ -1,7 +1,7 @@
 ---
 title: LeetCode[200] 岛屿数量
 date: 2021-12-19 11:29:45
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,并查集]
 categories: 编程算法
 widgets: null
 ---

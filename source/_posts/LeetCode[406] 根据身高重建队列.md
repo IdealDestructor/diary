@@ -1,7 +1,7 @@
 ---
 title: LeetCode[406] 根据身高重建队列
 date: 2021-12-06 17:05:45
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,数组]
 categories: 编程算法
 widgets: null
 ---

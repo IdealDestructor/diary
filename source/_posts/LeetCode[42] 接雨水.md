@@ -1,7 +1,7 @@
 ---
 title: LeetCode[42] 接雨水
 date: 2021-10-05 21:03:35
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,双指针,动态规划,单调栈]
 categories: 编程算法
 widgets: null
 ---
@@ -16,6 +16,7 @@ Similar Questions:
   "盛最多水的容器": https://leetcode.com/problems/container-with-most-water/
   "除自身以外数组的乘积": https://leetcode.com/problems/product-of-array-except-self/
   "接雨水 II": https://leetcode.com/problems/trapping-rain-water-ii/
+
 "倒水": https://leetcode.com/problems/pour-water/
 ---
 

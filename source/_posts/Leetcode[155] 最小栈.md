@@ -1,7 +1,7 @@
 ---
 title: LeetCode[155] 最小栈
 date: 2021-05-24 14:36:35
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,栈与队列]
 categories: 编程算法
 widgets: null
 ---
@@ -11,6 +11,7 @@ Related Topics:
   "设计": https://leetcode.com/tag/design/
 Similar Questions:
   "滑动窗口最大值": https://leetcode.com/problems/sliding-window-maximum/
+
   "最大栈": https://leetcode.com/problems/max-stack/
 ---
 

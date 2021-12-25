@@ -1,7 +1,7 @@
 ---
 title: LeetCode[46] 全排列
 date: 2021-10-06 21:03:35
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,回溯]
 categories: 编程算法
 widgets: null
 ---

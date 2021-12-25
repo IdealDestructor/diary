@@ -1,7 +1,7 @@
 ---
 title: LeetCode[718] 最长重复子数组
 date: 2021-05-19 21:36:35
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,动态规划,滑动窗口]
 categories: 编程算法
 widgets: null
 ---

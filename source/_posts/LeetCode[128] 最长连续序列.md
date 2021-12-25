@@ -1,7 +1,7 @@
 ---
 title: LeetCode[128] 最长连续序列
 date: 2021-11-14 11:29:45
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,哈希表]
 categories: 编程算法
 widgets: null
 ---

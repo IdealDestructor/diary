@@ -1,7 +1,7 @@
 ---
 title: LeetCode[25] K个一组翻转链表
 date: 2021-04-04 16:22:35
-tags: [C++,LeetCode]
+tags: [C++,LeetCode,链表]
 categories: 编程算法
 widgets: null
 ---
