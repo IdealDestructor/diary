@@ -1,7 +1,7 @@
 ---
 title: 视觉Transformer综述
 date: 2021-12-07 14:25:35
-tags: [计算机视觉,深度学习]
+tags: [深度学习]
 categories: 论文阅读
 widgets: null
 ---
