@@ -54,7 +54,7 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 > $$
 > 要求出参数![](https://math.jianshu.com/math?formula=(\omega %2Cb))，采用对数最大似然方法，令![](https://math.jianshu.com/math?formula=p_1%3Dp(y%3D1|x)%2Cp_0%3Dp(y%3D0|x))，**损失函数**写作：
 >
-> ![](https://math.jianshu.com/math?formula=l(\beta )%3Dlog\coprod\nolimits_{i%3D1}^m (p_1)^{y_1}(1-p_1)^{1-y_1}%3D\sum_{i%3D1}^m (y_1logp_1%2B(1-y_1)log(1-p_1))%5C%5C)
+> ![](https://math.jianshu.com/math?formula=l(\beta )%3Dlog\coprod\nolimits_{i%3D1}^m (p_1)^{y_1}(1-p_1)^{1-y_1}%3D\sum_{i%3D1}^m (y_1logp_1%2B(1-y_1)log(1-p_1)))
 >
 > 结合![](https://math.jianshu.com/math?formula=p_i)的定义，推导得：  
 > ![](https://math.jianshu.com/math?formula=l(\beta )%3D\sum_{i%3D1}^m y_i\beta \hat{x} -log(1%2Be^{\beta \hat{x} }) \\)

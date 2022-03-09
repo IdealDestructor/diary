@@ -72,7 +72,7 @@ Gini(D)反映了数据集D的纯度，值越小，纯度越高。我们在候选
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_jpg/njjfaJS7c9pgyvbGgyJZyThv3gvFtBkDRwbe1EumDXic0mkzJprNYcffaBnLor4E9rhArX0aMslx6rzJbzAkeZQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-(2)处理过大或过小的数据集：数据集较大时，可将数据集划分成多个子集，对子集构建分类器；当数据集较小时，通过自助采样(bootstrap)从原始数据集采样产生多组不同的数据集，构建分类器。
+(2)处理过大或过小的数据集：数据集较大时，可将数据集划分成多个子集，对子集构建分类器；当数据集较小时，通过自助采样(bootstrap)从 原始数据集采样产生多组不同的数据集，构建分类器。
 
 (3)若决策边界过于复杂，则线性模型不能很好地描述真实情况。因此，现对于特定区域的数据集，训练多个线性分类器，再将他们集成。
 
