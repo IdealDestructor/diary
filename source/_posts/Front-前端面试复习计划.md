@@ -1853,6 +1853,7 @@ function unique(arr) {
 2.  如何排查内存泄漏问题，面试官可能会问为什么页面越来越卡顿，直至卡死，怎么定位到产生这种现象的源代码（开发环境）？（[一文带你了解如何排查内存泄漏导致的页面卡顿现象](https://juejin.cn/post/6947841638118998029 "https://juejin.cn/post/6947841638118998029")）
 3.  vite 大火，我复习的时候是去年 9 月份，还没那么火，可能现在的你需要学一学了～
 4.  vue3 也一样，如果你是 React 技术栈（就像我之前一样）当我没说。
+4.  TCP&UDP https://www.cnblogs.com/fundebug/p/differences-of-tcp-and-udp.html
 
 十二、算法
 -----
