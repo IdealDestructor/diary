@@ -1,7 +1,7 @@
 ---
 title: 前端面试复习计划
 date: 2022-02-13 14:22:35
-tags: []
+tags: [面经]
 categories: Web前端
 widgets: null
 password: 328
@@ -1004,8 +1004,7 @@ function myNew(context) {
   obj.__proto__ = context.prototype;
   const res = context.apply(obj, [...arguments].slice(1));
   return typeof res === "object" ? res : obj;
-}
-复制代码
+} 
 ```
 
 ### 8、 异步
@@ -1099,7 +1098,7 @@ Promise.all = function (promises) {
 *   但和 Promise 并不互斥，反而，两者相辅相成。
 *   执行 async 函数，返回的一定是 Promise 对象。
 *   await 相当于 Promise 的 then。
-*   tru...catch 可捕获异常，代替了 Promise 的 catch。
+*   try...catch 可捕获异常，代替了 Promise 的 catch。
 
 ### 9、 浏览器的垃圾回收机制
 

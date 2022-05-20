@@ -1,7 +1,7 @@
 ---
 title: 「前端面试」 JS 编程题目总结
 date: 2022-03-13 14:22:35
-tags: []
+tags: [面经]
 categories: Web前端
 widgets: null
 password: 328
@@ -689,7 +689,7 @@ console.log(123 instanceof Object) // false
 
 > 引用 MDN: `Promise.all(iterable)` 方法返回一个 `Promise` 实例，此实例在 `iterable` 参数内所有的 `promise` 都 “完成（resolved）” 或参数中不包含 `promise` 时回调完成（resolve）；如果参数中 `promise` 有一个失败（rejected），此实例回调失败（reject），失败的原因是第一个失败 `promise` 的结果。
 
-```
+```javascript
 function promiseAll(promises) {
   return new Promise(function(resolve, reject) {
     if (!isArray(promises)) {

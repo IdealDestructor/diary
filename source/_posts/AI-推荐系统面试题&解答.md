@@ -98,32 +98,36 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
  ### bagging与boosting对比
 
   - boosting：串行的方式训练基分类器，各分类器之间有依赖。每次训练时，对前一层基分类器分错的样本给与更高的权重，更多的关注的是偏差；
-
   - bagging：是Bootstrap aggregating的意思，各分类器之间无强依赖，可以并行，最终结果进行投票（分类），或者平均（回归）；
-
   - 样本选择上：
 
     - Bagging：训练集是在原始集中有放回选取的，从原始集中选出的各轮训练集之间是独立的。
 
     - Boosting：每一轮的训练集不变，只是训练集中每个样例在分类器中的权重发生变化。而权值是根据上一轮的分类结果进行调整。
-
   - 样例权重：
 
     - Bagging：使用均匀取样，每个样例的权重相等。
 
     - Boosting：根据错误率不断调整样例的权值，错误率越大则权重越大。
-
   - 预测函数：
 
     - Bagging：所有预测函数的权重相等。
 
     - Boosting：每个弱分类器都有相应的权重，对于分类误差小的分类器会有更大的权重。
-
   - 并行计算：
 
     - Bagging：各个预测函数可以并行生成。
+- Boosting：各个预测函数只能顺序生成，因为后一个模型参数需要前一轮模型的结果。
 
-    - Boosting：各个预测函数只能顺序生成，因为后一个模型参数需要前一轮模型的结果。
+---
+
+用抽样的方式从原始样本中进行有放回的多次抽样（或者是抽特征），这种方法叫做Bootstraping，抽取k次每次抽取n个样本，这样就生成了k个样本容量为n的数据集。原始数据集中的样本可能是多次被抽到也可能是没有被抽到。
+
+boosting与bagging不同的是，bagging是多个模型“并行”，voting决定结果；而boosting是多个模型串行，通过多个模型的结果相加得到最终的结果。
+
+AdaBoosting方式每次使用的是全部的样本，每轮训练改变样本的权重。下一轮训练的目标是找到一个函数f 来拟合上一轮的残差。当残差足够小或者达到设置的最大迭代次数则停止。Boosting会减小在上一轮训练正确的样本的权重，增大错误样本的权重。（对的残差小，错的残差大）
+
+梯度提升的Boosting方式是使用代价函数对上一轮训练出的模型函数f的偏导来拟合残差。
 
  ### bagging与boosting分别从什么角度降低过拟合
 
@@ -137,7 +141,98 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 
  ### 推导逻辑回归损失函数和损失函数求导
 
+一、LR 与线性回归的联系
 
+
+一般的，线性回归模型的表达式可以写作：
+
+![](https://math.jianshu.com/math?formula=y%3D\omega ^Tx%2Bb\\)
+
+但许多问题不一定是线性的，![](https://math.jianshu.com/math?formula=\omega ^Tx%2Bb)的值可能和实际的标记值有一定的关系。更一般的，作为对线性回归的推广，广义线性模型的一般表达式为：
+
+![](https://math.jianshu.com/math?formula=y%3Dg^{-1}(\omega ^Tx%2Bb)\\)
+
+其中，![](https://math.jianshu.com/math?formula=g(·))是单调可微函数。逻辑回归模型就是广义线性模型的一种。
+
+对于分类任务，原先用于线性回归的表达式得到的结果是一个连续的实值，那怎样转换为分类任务呢？最简单的方法是设定一个阈值，超过这个阈值视为正例，小于这个阈值视为负例。这种做法可以看做引入了一个 “单位阶跃函数”。这种方法有个明显的缺点，那就是引入阈值或引入阶跃函数是不可导的，数学性质很差。第二个方法对前面方法进行了改进，使用 sigmoid 函数代替阈值法，众所周知 sigmoid 函数取值范围为（0,1）且当 x=0 时变化较大。**sigmoid 函数表达式**写作：
+
+![](https://math.jianshu.com/math?formula=y%3D\frac{1}{1%2Be^{-z}} \\)
+
+将 sigmoid 与线性回归函数结合，即为逻辑回归。简言之，**逻辑回归 = 线性回归 + sigmoid**。因此，**逻辑回归的表达式**为：
+
+![](https://math.jianshu.com/math?formula=y%3D\frac{1}{1%2Be^{-(\omega ^Tx%2Bb)} } \\)
+
+对上式进行变化可得：
+
+![](https://math.jianshu.com/math?formula=ln \frac{y}{1-y} %3D \omega ^T x%2Bb \\)
+
+如果把![](https://math.jianshu.com/math?formula=y)视为![](https://math.jianshu.com/math?formula=x)为正例的可能性，那么![](https://math.jianshu.com/math?formula=1-y)就是![](https://math.jianshu.com/math?formula=x)为负例的可能性。二者的比值的实际意义是![](https://math.jianshu.com/math?formula=x)作为正例的 “相对可能性”，称为 “对数几率”。所以逻辑回归的本质其实是**利用线性回归去逼近真实标记的对数几率**。逻辑回归**对样本数据的假设是服从伯努利分布**。
+
+二、损失函数推导
+
+下面我们一步步进行推导求参数。按前面的思路，把 y 视为正例，即![](https://math.jianshu.com/math?formula=y %3D p(y%3D1|x))，![](https://math.jianshu.com/math?formula=1-y%3Dp(y%3D0|x))。这里引入变量![](https://math.jianshu.com/math?formula=\beta %3D(\omega %3Bb)%2C \hat{x} %3D(x%2C1))，目的是使得![](https://math.jianshu.com/math?formula=\omega ^Tx%2Bb%3D\beta \hat{x} )，方便讨论。可以解得：
+
+$$
+\begin{array}{l}
+p(y=1 \mid x)=\frac{e^{\omega^{T} x+b}}{1+e^{\omega^{T} x+b}}=\frac{e^{\beta \widehat{x}}}{1+e^{\beta \widehat{x}}} \\
+p(y=0 \mid x)=\frac{1}{1+e^{\omega^{T} x+b}}=\frac{1}{1+e^{\beta \widehat{x}}}
+\end{array}
+$$
+要求出参数![](https://math.jianshu.com/math?formula=(\omega %2Cb))，采用对数最大似然方法，令![](https://math.jianshu.com/math?formula=p_1%3Dp(y%3D1|x)%2Cp_0%3Dp(y%3D0|x))，**损失函数**写作：
+
+![](https://math.jianshu.com/math?formula=l(\beta )%3Dlog\coprod\nolimits_{i%3D1}^m (p_1)^{y_1}(1-p_1)^{1-y_1}%3D\sum_{i%3D1}^m (y_1logp_1%2B(1-y_1)log(1-p_1)))
+
+结合![](https://math.jianshu.com/math?formula=p_i)的定义，推导得：  
+![](https://math.jianshu.com/math?formula=l(\beta )%3D\sum_{i%3D1}^m y_i\beta \hat{x} -log(1%2Be^{\beta \hat{x} }) \\)
+
+三、参数更新公式推导
+
+接下来，要去求![](https://math.jianshu.com/math?formula=(\omega %2Cb)%3D arg \max_{(\omega %2Cb)} l(\beta ) )。问题变成了**求以对数似然函数最大化为目标的优化问题**，采用梯度下降（上升）或拟牛顿法解决。关于梯度下降（上升）方法，这里是求最大值，对应的是梯度上升，一般常见的是梯度下降法使损失函数最小化，所以我们在这里加一个负号，要求的梯度可以写作：
+
+$$
+\begin{aligned}
+J(\beta) &=-\frac{1}{m} l(\beta) \\
+\frac{\nabla}{\nabla \beta} J(\beta) &=-\frac{1}{m} \frac{\nabla}{\nabla \beta} l(\beta)
+\end{aligned}
+$$
+我们把损失函数的初始写法带入，推导：
+
+![](https://math.jianshu.com/math?formula=-\frac{1}{m}  \frac{\nabla}{\nabla \beta } l(\beta )%3D-\frac{1}{m} \sum_{i%3D1}^m y_i \frac{1}{p_i} \frac{\nabla}{\nabla \beta }p_i-(1-y_i)\frac{1}{1-p_i} \frac{\nabla}{\nabla \beta } p_i\\ )
+
+由于![](https://math.jianshu.com/math?formula=p_i%3Dp(y%3D1|x)%3D\frac{1}{1%2Be^{-\beta \hat{x} }} %3Dsig(\beta \hat{x} ))是一个 sigmoid 函数，所以它的导数![](https://math.jianshu.com/math?formula=sig(x){’}%3Dsig(x)*(1-sig(x)))。接着推导：
+$$
+\begin{array}{c}
+-\frac{1}{m} \frac{\nabla}{\nabla \beta} l(\beta)=-\frac{1}{m} \sum_{i=1}^{m}\left(y_{i} \frac{1}{\operatorname{sig}(\beta \widehat{x})}-\left(1-y_{i}\right) \frac{1}{1-\operatorname{sig}(\beta \widehat{x})}\right) \operatorname{sig}(\beta \widehat{x})(1-\operatorname{sig}(\beta \widehat{x})) \frac{\nabla}{\nabla \beta}(\beta \widehat{x}) \\
+=-\frac{1}{m} \sum_{i=1}^{m}\left(y_{i}(1-\operatorname{sig}(\beta \widehat{x}))-\left(1-y_{i}\right) \operatorname{sig}(\beta \widehat{x})\right) x \\
+=\frac{1}{m} \sum_{i=1}^{m}\left(\operatorname{sig}(\beta \widehat{x})-y_{i}\right) x \\
+=\frac{1}{m} \sum_{i=1}^{m}\left(p_{i}-y_{i}\right) x
+\end{array}
+$$
+整理一下，也就是：
+
+![](https://math.jianshu.com/math?formula=  \frac{\nabla}{\nabla \beta }J(\beta)%3D\frac{1}{m}\sum_{i%3D1}^m ( p_i-y_i)x \\ )
+
+所以参数更新公式为：
+
+![](https://math.jianshu.com/math?formula=\beta %3D\beta -\alpha *   \frac{\nabla}{\nabla \beta }J(\beta)\\)
+
+这就是梯度下降法求参数的更新公式。
+
+ ### 逻辑回归为什么要对特征进行离散化
+
+0. 离散特征的增加和减少都很容易，易于模型的快速迭代；
+
+1. 稀疏向量内积乘法运算速度快，计算结果方便存储，容易扩展；
+
+2. 离散化后的特征对异常数据有很强的鲁棒性：比如一个特征是年龄>30是1，否则0。如果特征没有离散化，一个异常数据“年龄300岁”会给模型造成很大的干扰；
+
+3. 逻辑回归属于广义线性模型，表达能力受限；单变量离散化为N个后，每个变量有单独的权重，相当于为模型引入了非线性，能够提升模型表达能力，加大拟合；
+
+4. 离散化后可以进行特征交叉，由M+N个变量变为M*N个变量，进一步引入非线性，提升表达能力；
+
+5. 特征离散化后，模型会更稳定，比如如果对用户年龄离散化，20-30作为一个区间，不会因为一个用户年龄长了一岁就变成一个完全不同的人。当然处于区间相邻处的样本会刚好相反，所以怎么划分区间是门学问；
+
+6. 特征离散化以后，起到了简化了逻辑回归模型的作用，降低了模型过拟合的风险。
 
  ### 正则化项L1和L2为什么有用
 
@@ -301,7 +396,7 @@ wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 
  ### 连续特征离散化的作用
   - 增强模型鲁棒性，减少噪声的影响，减少过拟合
-  - 增强表达能力，引入了非线性表达，减少偏差
+  - 增强表达能力，引入了非线性表达，减少偏差，利于特征交叉
   - 模型运算速度更快，储存所用空间更少
 
  ### 对id类特征onehot导致维度过高，如何处理？
