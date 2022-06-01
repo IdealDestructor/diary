@@ -290,8 +290,8 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            ~IDEAL(): 'http://idealdestructor.com'
-            公众号: '析构理想'
+            ~IDEAL(): 'http://idealdestructor.github.io'
+            Contact: 'http://www.deqiang.wang'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
