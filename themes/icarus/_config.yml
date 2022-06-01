@@ -118,7 +118,7 @@ footer:
     # Links to be shown on the right of the footer section
     links:
         Zhihu:
-            icon: fa fa-zhihu
+            icon: fab fa-zhihu
             url: 'https://www.zhihu.com/people/idealdestructor'
         LeetCode:
             icon: fas fa-terminal
