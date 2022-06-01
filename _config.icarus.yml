@@ -117,12 +117,12 @@ navbar:
 footer:
     # Links to be shown on the right of the footer section
     links:
+        Zhihu:
+            icon: fab fa-zhihu
+            url: 'https://www.zhihu.com/people/idealdestructor'
         LeetCode:
             icon: fas fa-terminal
             url: 'https://leetcode-cn.com/u/idealdestructor/'
-        Zhihu:
-            icon: fa fa-zhihu
-            url: 'https://www.zhihu.com/people/idealdestructor'
         Scholar:
             icon: fas fa-graduation-cap
             url: 'https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AJsN-F5BJwq0y_k5LvIAnx2w8-J7gQF5XRICqZuNECnwqg8hFisRyGzQ-iCt0Uw0Xbt9hCGedhwcIc_r4BElnmfIs-HBrrA5mzXJblpTXOVNeNsJtzencFk&user=Ykem_e8AAAAJ'
