@@ -117,9 +117,6 @@ navbar:
 footer:
     # Links to be shown on the right of the footer section
     links:
-        Zhihu:
-            icon: fab fa-zhihu
-            url: 'https://www.zhihu.com/people/idealdestructor'
         LeetCode:
             icon: fas fa-terminal
             url: 'https://leetcode-cn.com/u/idealdestructor/'
@@ -132,6 +129,9 @@ footer:
         Email:
             icon: fa fa-envelope
             url: 'mailto:hi@mail.deqiang.wang'
+        Zhihu:
+            icon: fab fa-zhihu
+            url: 'https://www.zhihu.com/people/idealdestructor'
 # Article related configurations
 article:
     # Code highlight settings
