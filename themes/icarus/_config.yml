@@ -244,7 +244,7 @@ widgets:
         # Author name
         author: Francis
         # Author title
-        author_title: 'Stay focused & Be present'
+        author_title: 'Stay focused, be present'
         # Author's current location
         location: 'Beijing,China'
         # URL or path to the avatar image
@@ -290,8 +290,8 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            ~IDEAL(): 'http://idealdestructor.com'
-            公众号: '析构理想'
+            ~IDEAL(): 'http://idealdestructor.github.io'
+            Contact: 'http://deqiang.wang'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
