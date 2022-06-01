@@ -129,9 +129,6 @@ footer:
         Email:
             icon: fa fa-envelope
             url: 'mailto:hi@mail.deqiang.wang'
-        Zhihu:
-            icon: fab fa-zhihu
-            url: 'https://www.zhihu.com/people/idealdestructor'
 # Article related configurations
 article:
     # Code highlight settings
