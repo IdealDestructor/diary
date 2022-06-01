@@ -266,9 +266,9 @@ widgets:
             Weibo:
                 icon: fab fa-weibo
                 url: 'https://weibo.com/6019347563/profile'
-            RSS:
-                icon: fas fa-rss
-                url: /
+            Zhihu:
+                icon: fab fa-zhihu
+                url: 'https://www.zhihu.com/people/idealdestructor'
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
