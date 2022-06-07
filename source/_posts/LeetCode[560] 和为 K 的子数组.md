@@ -1,7 +1,7 @@
 ---
 title: LeetCode[560] 和为 K 的子数组
 date: 2022-06-01 14:22:35
-tags: [C++,LeetCode,数组,哈希表]
+tags: [JavaScript,LeetCode,数组,哈希表]
 categories: 编程算法
 widgets: null
 ---
