@@ -11,6 +11,8 @@ message: 这里需要密码才能访问。
 wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
 ---
 
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/735beee3bcc843efa854294f343fe7d7~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.image?)
+
 ## 前言
 
 当一个函数调用时，会创建一个执行上下文，这个上下文包括函数调用的一些信息(调用栈，传入参数，调用方式)，`this`就指向这个执行上下文。
