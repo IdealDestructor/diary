@@ -80,4 +80,20 @@ public:
     }
 };
 ```
+https://programmercarl.com/0198.打家劫舍.html
+
+```javascript
+//js
+const rob = nums => {
+    // 数组长度
+    const len = nums.length;
+    // dp数组初始化
+    const dp = [nums[0], Math.max(nums[0], nums[1])];
+    // 从下标2开始遍历
+    for (let i = 2; i < len; i++) {
+        dp[i] = Math.max(dp[i - 2] + nums[i], dp[i - 1]);
+    }
+    return dp[len - 1];
+};
+```
 
