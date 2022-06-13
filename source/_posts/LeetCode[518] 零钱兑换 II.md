@@ -32,7 +32,7 @@ widgets: null
 
 https://programmercarl.com/0518.零钱兑换II.html#_518-零钱兑换-ii
 
-```cpp
+```javascript
 const change = (amount, coins) => {
     let dp = Array(amount + 1).fill(0);
     dp[0] = 1;
