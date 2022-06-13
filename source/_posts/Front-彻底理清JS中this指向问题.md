@@ -5,10 +5,8 @@ tags: [面经]
 categories: Web前端
 widgets: null
 thumbnail: https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/735beee3bcc843efa854294f343fe7d7~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.image?
-
+cover: https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/735beee3bcc843efa854294f343fe7d7~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.image?
 ---
-
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/735beee3bcc843efa854294f343fe7d7~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.image?)
 
 ## 前言
 

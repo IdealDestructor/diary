@@ -993,3 +993,11 @@ const deepEqual = function(x, y) {
 *   一个对象的属性的值为 `undefined`，另一个对象中没有这个属性
 
 对于所有边界情况的处理，请参考 Lodash 中的 [_.isEqual( ) 源码](https://leetcode-cn.com/link/?target=https://github.com/lessfish/underscore-analysis/blob/master/underscore-1.8.3.js/src/underscore-1.8.3.js#L1094-L1190)
+
+
+
+---
+
+## 补充
+
+https://blog.csdn.net/qq_32442973/article/details/120359181
