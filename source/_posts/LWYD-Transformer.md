@@ -1,5 +1,5 @@
 ---
-title: 论文阅读笔记之Attention Is All You Need 
+title: Attention Is All You Need 
 date: 2021-12-02 14:22:35
 tags: [深度学习]
 categories: 论文阅读
