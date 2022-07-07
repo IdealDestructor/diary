@@ -1,5 +1,5 @@
 ---
-title: 论文阅读笔记之Recurrent Models of Visual Attention NIPS，2014
+title: Recurrent Models of Visual Attention
 date: 2021-05-13 14:22:35
 tags: [深度学习]
 categories: 论文阅读

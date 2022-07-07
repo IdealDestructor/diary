@@ -1,5 +1,5 @@
 ---
-title: ViT:Transformer Is All You Need
+title: ViT-Transformer Is All You Need
 date: 2021-12-07 14:25:35
 tags: [深度学习]
 categories: 论文阅读
