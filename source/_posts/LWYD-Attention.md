@@ -18,7 +18,7 @@ widgets: null
 
 1.模型
 
-![821593-20160529194517178-1085983118](https://i.loli.net/2021/05/13/IrtRnakhpWxFOBD.png)
+![](https://i.loli.net/2021/05/13/IrtRnakhpWxFOBD.png)
 
 各模块介绍如下
 
@@ -32,17 +32,17 @@ Action and Location Extractor
 
  结构如下所示，
 
-![img](https://pic1.zhimg.com/80/v2-a1b4b3765e0f451258d579b9fdaffd38_1440w.jpg)
+![](https://pic1.zhimg.com/80/v2-a1b4b3765e0f451258d579b9fdaffd38_1440w.jpg)
 
 输入信息<div> $g_{t}$ </div>和前一阶段历史信息<div> $h_{t-1}$ </div>经由RNN得到下一阶段输入的隐藏层信息，而隐藏层信息通过不完全可观察马尔科夫决策过程(POMDP)得到下一动作<div> $a_{t}$ </div>和下一阶段的位置信息 <div>$l_{t}$</div> 。
 
 整体结构：
 
-![821593-20160708104120139-2144659803](https://i.loli.net/2021/05/13/FL9tA2MKTgjbCc4.png)
+![](https://i.loli.net/2021/05/13/FL9tA2MKTgjbCc4.png)
 
 2.训练
 
-![821593-20160530075916399-764569189](https://i.loli.net/2021/05/13/q92g6LOJfnePEoB.png)
+![](https://i.loli.net/2021/05/13/q92g6LOJfnePEoB.png)
 
 训练目标：使得总奖励最大
 <div>
@@ -70,7 +70,7 @@ $$
 
 ### 实验结果
 
-![img](https://i.loli.net/2021/05/13/4Tc6IZtuBKFpOUX.png)
+![](https://i.loli.net/2021/05/13/4Tc6IZtuBKFpOUX.png)
 
 本文描述了一个端到端的优化序列，能够直接训练模型，最大化一个性能衡量，依赖于该模型在整个任务上所做的决策。按照时间顺序处理输入，一次在一张图像中处理不同的位置，逐渐的将这些部分的信息结合起来，来建立一个该场景或者环境的动态间隔表示。利用反向传播来训练神经网络的成分和策略梯度来解决控制问题的不可微性。
 

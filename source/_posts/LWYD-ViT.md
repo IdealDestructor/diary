@@ -6,7 +6,7 @@ categories: 论文阅读
 widgets: null
 ---
 
-# ![截屏2021-12-07 下午8.35.25](https://s2.loli.net/2021/12/07/jc6oQBnrRIvxeHW.png)
+# ![](https://s2.loli.net/2021/12/07/jc6oQBnrRIvxeHW.png)
 
 <!--more-->
 

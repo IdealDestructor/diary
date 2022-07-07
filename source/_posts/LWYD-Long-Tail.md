@@ -8,7 +8,7 @@ widgets: null
 
 ### 背景和动机
 
-![img](https://pic3.zhimg.com/80/v2-3c2009cd25376e7bd63b40cee7aa3de6_1440w.jpg)
+![](https://pic3.zhimg.com/80/v2-3c2009cd25376e7bd63b40cee7aa3de6_1440w.jpg)
 
 在传统的长尾分布处理方法中，普遍使用的重采样、重加权等re-balancing办法可能导致对头部类欠拟合且对尾部类过拟合，从而产生shortcut。而Decoupling为代表的二阶段训练方法则不太符合深度学习端到端的理念。
 <div>
