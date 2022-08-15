@@ -14,7 +14,7 @@ widgets: nul
 
 ![截屏2022-08-15 23.16.49](https://oss.deqiang.wang/img/%E6%88%AA%E5%B1%8F2022-08-15%2023.16.49.png)
 
-![截屏2022-08-15 23.16.13](/Users/wangdeqiang/Library/Application Support/typora-user-images/截屏2022-08-15 23.16.13.png)
+![截屏2022-08-15 23.23.40](https://oss.deqiang.wang/img/%E6%88%AA%E5%B1%8F2022-08-15%2023.23.40.png)
 
 ## Divide to Adapt: Mitigating Confirmation Bias forDomain Adaptation of Black-Box Predictors 
 
