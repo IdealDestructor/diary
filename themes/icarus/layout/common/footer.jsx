@@ -27,6 +27,9 @@ class Footer extends Component {
         }
 
         return <footer class="footer">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+              
             <div class="container">
                 <div class="level">
                     <div class="level-start">
@@ -42,6 +45,7 @@ class Footer extends Component {
                                 dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
                         </p>
                     </div>
+                    <div id="aplayer"></div>
                     <div class="level-end">
                         {Object.keys(links).length ? <div class="field has-addons">
                             {Object.keys(links).map(name => {
@@ -56,6 +60,7 @@ class Footer extends Component {
                     </div>
                 </div>
             </div>
+            <script src="https://deqiang.wang/aplayer.js"></script>
         </footer>;
     }
 }

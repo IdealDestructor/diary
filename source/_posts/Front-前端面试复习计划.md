@@ -152,7 +152,7 @@ CSS3 中的盒模型有以下两种：**标准盒模型**、**IE（替代）盒�
 *   `box-sizing: content-box` ：标准盒模型（默认值）。
 *   `box-sizing: border-box` ：IE（替代）盒模型。
 
-#### 2.2 css 选择器和优先级
+#### 2.2 css 选择和优先级
 
 首先我们要知道有哪些选择器：[选择器参考表](https://link.juejin.cn?target=https%3A%2F%2Fdeveloper.mozilla.org%2Fzh-CN%2Fdocs%2FLearn%2FCSS%2FBuilding_blocks%2FSelectors%23%25E9%2580%2589%25E6%258B%25A9%25E5%2599%25A8%25E5%258F%2582%25E8%2580%2583%25E8%25A1%25A8 "https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors#%E9%80%89%E6%8B%A9%E5%99%A8%E5%8F%82%E8%80%83%E8%A1%A8")。
 
