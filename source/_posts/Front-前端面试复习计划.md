@@ -216,17 +216,16 @@ BFC 具有一些特性：
 
 现在有以下 DOM 结构：
 
-```
+```html
 <div class="outer">
   <div class="left">左侧</div>
   <div class="right">右侧</div>
 </div>
-复制代码
 ```
 
 1.  利用浮动，左边元素宽度固定 ，设置向左浮动。将右边元素的 `margin-left` 设为固定宽度 。注意，因为右边元素的 `width` 默认为 `auto` ，所以会自动撑满父元素。
 
-```
+```css
 .outer {
   height: 100px;
 }
@@ -241,12 +240,11 @@ BFC 具有一些特性：
   height: 100%;
   background: lightseagreen;
 }
-复制代码
 ```
 
 2.  同样利用浮动，左边元素宽度固定 ，设置向左浮动。右侧元素设置 `overflow: hidden;` 这样右边就触发了 `BFC` ，`BFC` 的区域不会与浮动元素发生重叠，所以两侧就不会发生重叠。
 
-```
+```css
 .outer {
   height: 100px;
 }
@@ -261,12 +259,11 @@ BFC 具有一些特性：
   height: 100%;
   background: lightseagreen;
 }
-复制代码
 ```
 
 3.  利用 `flex` 布局，左边元素固定宽度，右边的元素设置 `flex: 1` 。
 
-```
+```css
 .outer {
   display: flex;
   height: 100px;
@@ -281,12 +278,11 @@ BFC 具有一些特性：
   height: 100%;
   background: lightseagreen;
 }
-复制代码
 ```
 
 4.  利用绝对定位，父级元素设为相对定位。左边元素 `absolute`  定位，宽度固定。右边元素的 `margin-left`  的值设为左边元素的宽度值。
 
-```
+```css
 .outer {
   position: relative;
   height: 100px;
@@ -302,12 +298,11 @@ BFC 具有一些特性：
   height: 100%;
   background: lightseagreen;
 }
-复制代码
 ```
 
 5.  利用绝对定位，父级元素设为相对定位。左边元素宽度固定，右边元素 `absolute`  定位， `left`  为宽度大小，其余方向定位为 `0` 。
 
-```
+```css
 .outer {
   position: relative;
   height: 100px;
@@ -326,7 +321,6 @@ BFC 具有一些特性：
   height: 100%;
   background: lightseagreen;
 }
-复制代码
 ```
 
 #### 2.6 实现圣杯布局和双飞翼布局（经典三分栏布局）
@@ -345,18 +339,17 @@ BFC 具有一些特性：
 
 **圣杯布局：** HTML 结构：
 
-```
+```html
 <div id="container" class="clearfix">
   <p class="center">我是中间</p>
   <p class="left">我是左边</p>
   <p class="right">我是右边</p>
 </div>
-复制代码
 ```
 
 CSS 样式：
 
-```
+```css
 #container {
   padding-left: 200px;
   padding-right: 150px;
@@ -386,23 +379,21 @@ CSS 样式：
   display: table;
   clear: both;
 }
-复制代码
 ```
 
 **双飞翼布局：** HTML 结构：
 
-```
+```html
 <div id="main" class="float">
   <div id="main-wrap">main</div>
 </div>
 <div id="left" class="float">left</div>
 <div id="right" class="float">right</div>
-复制代码
 ```
 
 CSS 样式：
 
-```
+```css
 .float {
   float: left;
 }
@@ -426,7 +417,6 @@ CSS 样式：
   background-color: lightskyblue;
   margin-left: -190px;
 }
-复制代码
 ```
 
 tips：上述代码中 `margin-left: -100%`  相对的是父元素的 `content`  宽度，即不包含 `paddig` 、 `border`  的宽度。
@@ -437,7 +427,7 @@ tips：上述代码中 `margin-left: -100%`  相对的是父元素的 `content` 
 
 1.  利用绝对定位，设置 `left: 50%`  和 `top: 50%`  现将子元素左上角移到父元素中心位置，然后再通过 `translate`  来调整子元素的中心点到父元素的中心。该方法可以**不定宽高**。
 
-```
+```css
 .father {
   position: relative;
 }
@@ -447,12 +437,11 @@ tips：上述代码中 `margin-left: -100%`  相对的是父元素的 `content` 
   top: 50%;
   transform: translate(-50%, -50%);
 }
-复制代码
 ```
 
 2.  利用绝对定位，子元素所有方向都为 `0` ，将 `margin`  设置为 `auto` ，由于宽高固定，对应方向实现平分，该方法必须**盒子有宽高**。
 
-```
+```css
 .father {
   position: relative;
 }
@@ -466,12 +455,11 @@ tips：上述代码中 `margin-left: -100%`  相对的是父元素的 `content` 
   height: 100px;
   width: 100px;
 }
-复制代码
 ```
 
 3.  利用绝对定位，设置 `left: 50%` 和 `top: 50%` 现将子元素左上角移到父元素中心位置，然后再通过 `margin-left`  和 `margin-top`  以子元素自己的一半宽高进行负值赋值。该方法**必须定宽高**。
 
-```
+```javascript
 .father {
   position: relative;
 }
@@ -484,18 +472,16 @@ tips：上述代码中 `margin-left: -100%`  相对的是父元素的 `content` 
   margin-left: -100px;
   margin-top: -100px;
 }
-复制代码
 ```
 
 4.  利用 `flex` ，最经典最方便的一种了，不用解释，定不定宽高无所谓的。
 
-```
+```css
 .father {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-复制代码
 ```
 
 其实还有很多方法，比如 `display: grid`  或 `display: table-cell`  来做，有兴趣点击下面这篇文章可以了解下：  
@@ -537,24 +523,22 @@ js 的考察其实来回就那些东西，不过就我自己而已学习的时�
 
 **值类型的赋值变动过程如下：**
 
-```
+```javascript
 let a = 100;
 let b = a;
 a = 200;
 console.log(b); // 200
-复制代码
 ```
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/55df6cb63d3346be9ec1f572a1514853~tplv-k3u1fbpfcp-watermark.awebp) 值类型是直接存储在 ** 栈（stack）** 中的简单数据段，占据空间小、大小固定，属于被频繁使用数据，所以放入栈中存储；
 
 **引用类型的赋值变动过程如下：**
 
-```
+```javascript
 let a = { age: 20 };
 let b = a;
 b.age = 30;
 console.log(a.age); // 30
-复制代码
 ```
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56c5c43d1c584ed4b8e4cce8855bab52~tplv-k3u1fbpfcp-watermark.awebp) 引用类型存储在 ** 堆（heap）** 中的对象，占据空间大、大小不固定。如果存储在栈中，将会影响程序运行的性能；
@@ -563,7 +547,7 @@ console.log(a.age); // 30
 
 *   **typeof**：能判断所有**值类型，函数**。不可对 **null、对象、数组**进行精确判断，因为都返回 `object` 。
 
-```
+```javascript
 console.log(typeof undefined); // undefined
 console.log(typeof 2); // number
 console.log(typeof true); // boolean
@@ -575,12 +559,11 @@ console.log(typeof function () {}); // function
 console.log(typeof []); // object
 console.log(typeof {}); // object
 console.log(typeof null); // object
-复制代码
 ```
 
 *   **instanceof**：能判断**对象**类型，不能判断基本数据类型，**其内部运行机制是判断在其原型链中能否找到该类型的原型**。比如考虑以下代码：
 
-```
+```javascript
 class People {}
 class Student extends People {}
 
@@ -588,14 +571,13 @@ const vortesnail = new Student();
 
 console.log(vortesnail instanceof People); // true
 console.log(vortesnail instanceof Student); // true
-复制代码
 ```
 
 其实现就是顺着**原型链**去找，如果能找到对应的 `Xxxxx.prototype`  即为 `true` 。比如这里的 `vortesnail`  作为实例，顺着原型链能找到 `Student.prototype`  及 `People.prototype` ，所以都为 `true` 。
 
 *   **Object.prototype.toString.call()**：所有原始数据类型都是能判断的，还有 **Error 对象，Date 对象**等。
 
-```
+```javascript
 Object.prototype.toString.call(2); // "[object Number]"
 Object.prototype.toString.call(""); // "[object String]"
 Object.prototype.toString.call(true); // "[object Boolean]"
@@ -605,17 +587,15 @@ Object.prototype.toString.call(Math); // "[object Math]"
 Object.prototype.toString.call({}); // "[object Object]"
 Object.prototype.toString.call([]); // "[object Array]"
 Object.prototype.toString.call(function () {}); // "[object Function]"
-复制代码
 ```
 
 在面试中有一个经常被问的问题就是：如何判断变量是否为数组？
 
-```
+```javascript
 Array.isArray(arr); // true
 arr.__proto__ === Array.prototype; // true
 arr instanceof Array; // true
 Object.prototype.toString.call(arr); // "[object Array]"
-复制代码
 ```
 
 #### 1.3 手写深拷贝
@@ -624,7 +604,7 @@ Object.prototype.toString.call(arr); // "[object Array]"
 
 文章推荐：[如何写出一个惊艳面试官的深拷贝?](https://juejin.cn/post/6844903929705136141 "https://juejin.cn/post/6844903929705136141")
 
-```
+```javascript
 /**
  * 深拷贝
  * @param {Object} obj 要拷贝的对象
@@ -661,7 +641,6 @@ function deepClone(obj = {}, map = new Map()) {
   // 返回结果
   return result;
 }
-复制代码
 ```
 
 #### 1.4 根据 0.1+0.2 ! == 0.3，讲讲 IEEE 754 ，如何让其相等？
@@ -677,7 +656,7 @@ function deepClone(obj = {}, map = new Map()) {
 
 1.  转为整数（大数）运算。
 
-```
+```javascript
 function add(a, b) {
   const maxLen = Math.max(
     a.toString().split(".")[1].length,
@@ -689,27 +668,25 @@ function add(a, b) {
   const bigRes = (bigA + bigB) / BigInt(base); // 如果是 (1n + 2n) / 10n 是等于 0n的。。。
   return Number(bigRes);
 }
-复制代码
 ```
 
 这里代码是有问题的，因为最后计算 `bigRes` 的大数相除（即 `/`）是会把小数部分截掉的，所以我很疑惑为什么网络上很多文章都说可以通过**先转为整数运算再除回去，为了防止转为的整数超出 js 表示范围，还可以运用到 ES6 新增的大数类型，我真的很疑惑，希望有好心人能解答下。**
 
 2.  使用 `Number.EPSILON` 误差范围。
 
-```
+```javascript
 function isEqual(a, b) {
   return Math.abs(a - b) < Number.EPSILON;
 }
 
 console.log(isEqual(0.1 + 0.2, 0.3)); // true
-复制代码
 ```
 
 `Number.EPSILON` 的实质是一个可以接受的最小误差范围，一般来说为 `Math.pow(2, -52)` 。 
 
 3.  转成字符串，对字符串做加法运算。
 
-```
+```javascript
 // 字符串数字相加
 var addStrings = function (num1, num2) {
   let i = num1.length - 1;
@@ -740,7 +717,6 @@ function isEqual(a, b, sum) {
 }
 
 console.log(isEqual(0.1, 0.2, 0.3)); // true
-复制代码
 ```
 
 这是 leetcode 上一道原题：[415. 字符串相加](https://link.juejin.cn?target=https%3A%2F%2Fleetcode-cn.com%2Fproblems%2Fadd-strings%2F "https://leetcode-cn.com/problems/add-strings/")。区别在于原题没有考虑小数，但是也是很简单的，我们分为两个部分计算就行。
@@ -749,12 +725,11 @@ console.log(isEqual(0.1, 0.2, 0.3)); // true
 
 可以说这部分每家面试官都会问了。。首先理解的话，其实一张图即可，一段代码即可。
 
-```
+```javascript
 function Foo() {}
 
 let f1 = new Foo();
 let f2 = new Foo();
-复制代码
 ```
 
 千万别畏惧下面这张图，特别有用，一定要搞懂，熟到提笔就能默画出来。 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a61ca07672a45d3aecf382100cc9719~tplv-k3u1fbpfcp-watermark.awebp)
@@ -808,7 +783,7 @@ let f2 = new Foo();
 
 闭包应用： 函数作为参数被传递：
 
-```
+```javascript
 function print(fn) {
   const a = 200;
   fn();
@@ -820,12 +795,11 @@ function fn() {
 }
 
 print(fn); // 100
-复制代码
 ```
 
 函数作为返回值被返回：
 
-```
+```javascript
 function create() {
   const a = 100;
 
@@ -837,14 +811,13 @@ function create() {
 const fn = create();
 const a = 200;
 fn(); // 100
-复制代码
 ```
 
 **闭包：自由变量的查找，是在函数定义的地方，向上级作用域查找。不是在执行的地方。** ****
 
 应用实例：比如缓存工具，隐藏数据，只提供 API 。
 
-```
+```javascript
 function createCache() {
   const data = {}; // 闭包中被隐藏的数据，不被外界访问
   return {
@@ -860,7 +833,6 @@ function createCache() {
 const c = createCache();
 c.set("a", 100);
 console.log(c.get("a")); // 100
-复制代码
 ```
 
 ### 6、 call、apply、bind 实现
@@ -873,7 +845,7 @@ console.log(c.get("a")); // 100
 
 举个例子：
 
-```
+```javascript
 var obj = {
   value: "vortesnail",
 };
@@ -883,7 +855,6 @@ function fn() {
 }
 
 fn.call(obj); // vortesnail
-复制代码
 ```
 
 通过 `call` 方法我们做到了以下两点：
@@ -893,7 +864,7 @@ fn.call(obj); // vortesnail
 
 那么如果我们自己写 `call` 方法的话，可以怎么做呢？我们先考虑改造 `obj` 。
 
-```
+```javascript
 var obj = {
   value: "vortesnail",
   fn: function () {
@@ -902,21 +873,19 @@ var obj = {
 };
 
 obj.fn(); // vortesnail
-复制代码
 ```
 
 这时候 this 就指向了 `obj` ，但是这样做我们手动给 `obj` 增加了一个 `fn` 属性，这显然是不行的，不用担心，我们执行完再使用对象属性的删除方法（delete）不就行了？
 
-```
+```javascript
 obj.fn = fn;
 obj.fn();
 delete obj.fn;
-复制代码
 ```
 
 根据这个思路，我们就可以写出来了：
 
-```
+```javascript
 Function.prototype.myCall = function (context) {
   // 判断调用对象
   if (typeof this !== "function") {
@@ -937,14 +906,13 @@ Function.prototype.myCall = function (context) {
   // 将执行结果返回
   return result;
 };
-复制代码
 ```
 
 **apply**
 
 我们会了 `call` 的实现之后，`apply` 就变得很简单了，他们没有任何区别，除了传参方式。
 
-```
+```javascript
 Function.prototype.myApply = function (context) {
   if (typeof this !== "function") {
     throw new Error("Type error");
@@ -964,14 +932,13 @@ Function.prototype.myApply = function (context) {
   delete context[fnSymbol];
   return result;
 };
-复制代码
 ```
 
 **bind**
 
 `bind` 返回的是一个函数，这个地方可以详细阅读这篇文章，讲的非常清楚：[解析 bind 原理，并手写 bind 实现](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FsisterAn%2FJavaScript-Algorithms%2Fissues%2F81 "https://github.com/sisterAn/JavaScript-Algorithms/issues/81")。
 
-```
+```javascript
 Function.prototype.myBind = function (context) {
   // 判断调用对象是否为函数
   if (typeof this !== "function") {
@@ -988,7 +955,6 @@ Function.prototype.myBind = function (context) {
     );
   };
 };
-复制代码
 ```
 
 ### 7、 new 实现
@@ -998,7 +964,7 @@ Function.prototype.myBind = function (context) {
 3.  构造函数的 this 指向这个对象，执行构造函数的代码（为这个新对象添加属性）。
 4.  判断函数的返回值类型，如果是引用类型，就返回这个引用类型的对象。
 
-```
+```javascript
 function myNew(context) {
   const obj = new Object();
   obj.__proto__ = context.prototype;
@@ -1017,7 +983,7 @@ function myNew(context) {
 
 简单的例子：
 
-```
+```javascript
 console.log("Hi");
 
 setTimeout(function cb() {
@@ -1025,7 +991,6 @@ setTimeout(function cb() {
 }, 5000);
 
 console.log("Bye");
-复制代码
 ```
 
 它的执行过程是这样的： ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1e15fc609aa84eac973c5b8ff163c11c~tplv-k3u1fbpfcp-watermark.awebp) Web APIs 会创建对应的线程，比如 `setTimeout` 会创建定时器线程，`ajax` 请求会创建 http 线程。。。这是由 js 的运行环境决定的，比如浏览器。
@@ -1060,7 +1025,7 @@ console.log("Bye");
 
 实现一个 Promise.all：
 
-```
+```javascript
 Promise.all = function (promises) {
   return new Promise((resolve, reject) => {
     // 参数可以不是数组，但必须具有 Iterator 接口
@@ -1089,7 +1054,6 @@ Promise.all = function (promises) {
     }
   });
 };
-复制代码
 ```
 
 #### 8.3 async/await 和 Promise 的关系
@@ -1132,7 +1096,7 @@ V8 的垃圾回收机制也是基于标记清除算法，不过对其做了一�
 
 EventMitter 就是发布订阅模式的典型应用：
 
-```
+```javascript
 export class EventEmitter {
   private _events: Record<string, Array<Function>>;
 
@@ -1195,7 +1159,6 @@ export class EventEmitter {
     }
   }
 }
-复制代码
 ```
 
 四、web 存储
@@ -1376,7 +1339,6 @@ HTTP/2 有哪些改进？（很大可能问原理）
 2. render
 3. componentDidMount
    发生在 render 函数之后，已经挂载 Dom
-复制代码
 ```
 
 *   更新阶段。
@@ -1401,7 +1363,6 @@ state 更新时（具体同上）
 2. componentWillUpdate
 3. render
 4. componentDidUpdate
-复制代码
 ```
 
 *   卸载阶段。
@@ -1409,8 +1370,6 @@ state 更新时（具体同上）
 ```
 1. componentWillUnmount
    在组件卸载及销毁之前直接调用。在此方法中执行必要的清理操作，例如，清除 timer，取消网络请求或清除在 componentDidMount  中创建的订阅等。componentWillUnmount 中不应调用 setState，因为该组件将永远不会重新渲染。组件实例卸载后，将永远不会再挂载它。
-
-复制代码
 ```
 
 在 React 16 中官方已经建议删除以下三个方法，非要使用必须加前缀：`UNSAVE_` 。
@@ -1419,7 +1378,6 @@ state 更新时（具体同上）
 componentWillMount;
 componentWillReceiveProps;
 componentWillUpdate;
-复制代码
 ```
 
 取代这两三个生命周期的以下两个新的。
@@ -1430,7 +1388,6 @@ componentWillUpdate;
 2. getSnapshotBeforeUpdate（prevProps,prevState）
    在这个阶段我们可以拿到上一个状态 Dom 元素的坐标、大小的等相关信息。用于替代旧的生命周期中的 componentWillUpdate。
    该函数的返回值将会作为 componentDidUpdate 的第三个参数出现。
-复制代码
 ```
 
 需要注意的是，一般都会问为什么要废弃三个生命周期，原因是什么。
@@ -1590,7 +1547,7 @@ hoc 能复用**逻辑和视图**，hook 只能复用**逻辑**。
 
 [JavaScript 专题之跟着 underscore 学防抖](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fmqyqingfeng%2FBlog%2Fissues%2F22 "https://github.com/mqyqingfeng/Blog/issues/22") 
 
-```
+```javascript
 function debounce(func, wait, immediate) {
   let timeout;
 
@@ -1612,14 +1569,13 @@ function debounce(func, wait, immediate) {
     }
   };
 }
-复制代码
 ```
 
 ### 2、节流
 
 [JavaScript 专题之跟着 underscore 学节流](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fmqyqingfeng%2FBlog%2Fissues%2F26 "https://github.com/mqyqingfeng/Blog/issues/26")
 
-```
+```javascript
 // 使用时间戳
 function throttle(func, wait) {
   let preTime = 0;
@@ -1652,14 +1608,13 @@ function throttle(func, wait) {
     }
   };
 }
-复制代码
 ```
 
 ### 3、快速排序
 
 这里对快排思想不太明白的同学可以看下这个讲解的很清晰的视频：[快速排序算法](https://link.juejin.cn?target=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2FBV1at411T75o%3Ffrom%3Dsearch%26seid%3D10065750342799523965%26spm_id_from%3D333.337.0.0 "https://www.bilibili.com/video/BV1at411T75o?from=search&seid=10065750342799523965&spm_id_from=333.337.0.0")。
 
-```
+```javascript
 function sortArray(nums) {
   quickSort(0, nums.length - 1, nums);
   return nums;
@@ -1690,14 +1645,13 @@ function sort(start, end, arr) {
   arr[left] = base;
   return left;
 }
-复制代码
 ```
 
 ### 4、instanceof
 
 这个手写一定要懂原型及原型链。
 
-```
+```javascript
 function myInstanceof(target, origin) {
   if (typeof target !== "object" || target === null) return false;
   if (typeof origin !== "function")
@@ -1709,14 +1663,13 @@ function myInstanceof(target, origin) {
   }
   return false;
 }
-复制代码
 ```
 
 ### 5、数组扁平化
 
 重点，不要觉得用不到就不管，这道题就是考察你对 js 语法的熟练程度以及手写代码的基本能力。
 
-```
+```javascript
 function flat(arr, depth = 1) {
   if (depth > 0) {
     // 以下代码还可以简化，不过为了可读性，还是....
@@ -1726,14 +1679,13 @@ function flat(arr, depth = 1) {
   }
   return arr.slice();
 }
-复制代码
 ```
 
 ### 6、手写 reduce
 
 先不考虑第二个参数初始值：
 
-```
+```javascript
 Array.prototype.reduce = function (cb) {
   const arr = this; //this就是调用reduce方法的数组
   let total = arr[0]; // 默认为数组的第一项
@@ -1742,12 +1694,11 @@ Array.prototype.reduce = function (cb) {
   }
   return total;
 };
-复制代码
 ```
 
 考虑上初始值：
 
-```
+```javascript
 Array.prototype.reduce = function (cb, initialValue) {
   const arr = this;
   let total = initialValue || arr[0];
@@ -1757,14 +1708,13 @@ Array.prototype.reduce = function (cb, initialValue) {
   }
   return total;
 };
-复制代码
 ```
 
 ### 7、带并发的异步调度器 Scheduler
 
 JS 实现一个带并发限制的异度调度器 Scheduler，保证同时运行的任务最多有两个。完善下面代码中的 Scheduler 类，使得以下程序能正确输出。
 
-```
+```javascript
 class Scheduler {
   add(promiseMaker) {}
 }
@@ -1788,12 +1738,11 @@ addTask(400, "4");
 // 500ms 时，2完成，输出2，任务3入队。
 // 800ms 时，3完成，输出3，任务4入队。
 // 1000ms 时，1完成，输出1。
-复制代码
 ```
 
 根据题目，我们只需要操作 `Scheduler` 类就行：
 
-```
+```javascript
 class Scheduler {
   constructor() {
     this.waitTasks = []; // 待执行的任务队列
@@ -1820,29 +1769,26 @@ class Scheduler {
     });
   }
 }
-复制代码
 ```
 
 ### 8、去重
 
 *   利用 ES6 `set` 关键字：
 
-```
+```javascript
 function unique(arr) {
   return [...new Set(arr)];
 }
-复制代码
 ```
 
 *   利用 ES5 `filter` 方法：
 
-```
+```javascript
 function unique(arr) {
   return arr.filter((item, index, array) => {
     return array.indexOf(item) === index;
   });
 }
-复制代码
 ```
 
 十一、其它
