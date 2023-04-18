@@ -1,7 +1,7 @@
 # Version of the configuration file
 version: 4.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
-variant: default
+variant: cyberpunk
 # Path or URL to the website's logo
 logo: /img/logofrancis.png
 # Page metadata configurations
@@ -117,18 +117,18 @@ navbar:
 footer:
     # Links to be shown on the right of the footer section
     links:
-        LeetCode:
-            icon: fas fa-terminal
-            url: 'https://leetcode-cn.com/u/idealdestructor/'
-        Scholar:
-            icon: fas fa-graduation-cap
-            url: 'https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AJsN-F5BJwq0y_k5LvIAnx2w8-J7gQF5XRICqZuNECnwqg8hFisRyGzQ-iCt0Uw0Xbt9hCGedhwcIc_r4BElnmfIs-HBrrA5mzXJblpTXOVNeNsJtzencFk&user=Ykem_e8AAAAJ'
-        GitHub:
-            icon: fab fa-github
-            url: 'https://github.com/idealdestructor'
-        Email:
-            icon: fa fa-envelope
-            url: 'mailto:hi@mail.deqiang.wang'
+        # LeetCode:
+        #     icon: fas fa-terminal
+        #     url: 'https://leetcode-cn.com/u/idealdestructor/'
+        # Scholar:
+        #     icon: fas fa-graduation-cap
+        #     url: 'https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AJsN-F5BJwq0y_k5LvIAnx2w8-J7gQF5XRICqZuNECnwqg8hFisRyGzQ-iCt0Uw0Xbt9hCGedhwcIc_r4BElnmfIs-HBrrA5mzXJblpTXOVNeNsJtzencFk&user=Ykem_e8AAAAJ'
+        # GitHub:
+        #     icon: fab fa-github
+        #     url: 'https://github.com/idealdestructor'
+        # Email:
+        #     icon: fa fa-envelope
+        #     url: 'mailto:hi@mail.deqiang.wang'
 # Article related configurations
 article:
     # Code highlight settings
