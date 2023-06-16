@@ -6,12 +6,13 @@ categories: 电影鉴赏
 thumbnail: /images/dyjs/221029.jpg
 ---
 
-![](https://oss.deqiang.wang/img/221029.jpg)
 <!--more-->
 
 <div class="notification is-success is-size-6">
 	作者：鱼大耳（来自豆瓣） 来源：https://movie.douban.com/review/8112777/
 </div>
+![](https://oss.deqiang.wang/img/221029.jpg)
+
 忠于艺术者，将会在通往艺术的道路上不期而遇，相互认出，好像是老友相逢，亲人重聚。 青年时期，艾克斯的塞尚就这样在一群人中认出左拉的。塞尚是银行家的儿子，大宅豪门，父亲热切盼望着将来子承父业。而左拉穷，父亲早亡。但塞尚对左拉的才华几乎是信仰着的：“我多么想我画出的画能有你笔下写出的文字那么生动。” 而左拉对塞尚也是交口赞赏：“这个人是天才。”他这么说着，可他心里永远埋着那么一丁点儿的怀疑。“你还需要时间证明你是天才。” 
 
 ![](https://oss.deqiang.wang/img/IMG_0684.JPG)
