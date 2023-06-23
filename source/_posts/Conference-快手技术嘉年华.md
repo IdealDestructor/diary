@@ -2,7 +2,7 @@
 title: 快手技术嘉年华
 date: 2021-05-15 16:11:20
 tags: [Web前端,推荐系统]
-categories: 会议展览
+categories: 会议论坛
 thumbnail: https://i.loli.net/2021/05/30/xedabGqYH9Ahyzn.jpg
 cover: https://i.loli.net/2021/05/30/xedabGqYH9Ahyzn.jpg
 widgets: null

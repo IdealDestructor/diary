@@ -2,7 +2,7 @@
 title: BAAI2023 北京智源大会
 date: 2023-05-29 13:29:20
 tags: [人工智能]
-categories: 会议展览
+categories: 会议论坛
 thumbnail: 
 cover: 
 widgets: null
