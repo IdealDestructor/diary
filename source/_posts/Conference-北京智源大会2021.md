@@ -1,7 +1,7 @@
 ---
 title: BAAI2021 北京智源大会
 date: 2021-06-03 13:29:20
-tags: [深度学习,机器学习,推荐系统]
+tags: [人工智能]
 categories: 会议展览
 thumbnail: https://i.loli.net/2021/07/12/UQXVgwuOmnPvJ4R.jpg
 cover: https://i.loli.net/2021/07/12/UQXVgwuOmnPvJ4R.jpg

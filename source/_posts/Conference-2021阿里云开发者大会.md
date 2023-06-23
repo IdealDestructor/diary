@@ -1,7 +1,7 @@
 ---
 title: 2021阿里云开发者大会
 date: 2021-05-29 13:29:20
-tags: [推荐系统,机器学习]
+tags: [人工智能]
 categories: 会议展览
 thumbnail: https://i.loli.net/2021/05/30/DgzSEUlBHYuWqbh.jpg
 cover: https://i.loli.net/2021/05/30/DgzSEUlBHYuWqbh.jpg
