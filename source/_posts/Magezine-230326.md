@@ -9,7 +9,11 @@ thumbnail: /images/wkjd/230326.png
 <div class="notification is-success is-size-6">
 2023年3月26日 TIMES
 </div>
+
+
 “ChatGPT”等人工智能工具在今年大热, 频频登上媒体报道, 影响蔓延到各行各业。那么想要表达国内公司追赶这一波浪潮, 同学们可能会想到“***embrace*** ***the ChatGPT trend***”或者“***keep up with******the trend***”。
+
+![图片](https://oss.deqiang.wang/img/230326.png)
 
 <!--more-->     
 
@@ -38,10 +42,6 @@ Alibaba says it will launch its own ChatGPT-style tool, becoming the latest tech
 ​     
 
 《有线电视新闻网》报道摘录中的“**giant**”和“**behemoth**”表意相通, 前者本义表示“巨人”, 后者本义表示“巨兽”, 继而都可拓展表示“(有影响力的) 企业巨头, 大公司”。
-
-
-
-![图片](https://oss.deqiang.wang/img/230326.png)
 
 
 
