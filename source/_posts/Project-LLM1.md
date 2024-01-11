@@ -1,7 +1,7 @@
 ---
 title: 书生·浦语大模型全链路开源体系
 date: 2024-01-12 14:25:35
-tags: [LLM]
+tags: [大模型]
 categories: 项目开发
 widgets: null
 ---
