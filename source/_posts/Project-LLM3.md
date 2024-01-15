@@ -6,7 +6,7 @@ categories: 项目开发
 widgets: null
 ---
 
-![截屏2024-01-15 11.57.37](https://oss.deqiang.wang/img/%E6%88%AA%E5%B1%8F2024-01-15%2011.57.37.png)
+![截屏2024-01-15 22.23.46](https://oss.deqiang.wang/img/%E6%88%AA%E5%B1%8F2024-01-15%2022.23.46.png)
 
 <!--more-->
 
@@ -245,3 +245,10 @@ gr.close_all()
 demo.launch()
 ```
 
+![截屏2024-01-15 11.57.37](https://oss.deqiang.wang/img/%E6%88%AA%E5%B1%8F2024-01-15%2011.57.37.png)
+
+自定义知识库，训练面试八股文AI小助手：
+
+![截屏2024-01-15 22.41.14](https://oss.deqiang.wang/img/%E6%88%AA%E5%B1%8F2024-01-15%2022.41.14.png)
+
+![截屏2024-01-15 22.41.19](https://oss.deqiang.wang/img/%E6%88%AA%E5%B1%8F2024-01-15%2022.41.19.png)
